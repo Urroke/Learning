@@ -19,11 +19,11 @@ class A{
 }
 
 class B extends A{
-    private String c;
+    private double c;
 
     public B(){;}
 
-    public B(int a, int b, String c)
+    public B(int a, int b, double c)
     {
         super(a, b);
         this.c = c;
@@ -40,7 +40,7 @@ public class App
     public static void main( String[] args )
     {
         A a = new A(1, 2);
-        B b = new B(2, 3, "Hi my name is Jane");
+        B b = new B(2, 3, 3.141592653589);
         b.Print();
     }
 }
